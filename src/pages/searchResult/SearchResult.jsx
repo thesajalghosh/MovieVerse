@@ -4,7 +4,7 @@ import './SearchResult.css'
 const SearchResult = () => {
   return (
     <div>
-      
+      search result
     </div>
   )
 }
