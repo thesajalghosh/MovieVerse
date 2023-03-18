@@ -1,0 +1,74 @@
+
+.heroBanner{
+    width: 100%;
+    height: 450px;
+    background-color: var(--black);
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    position: relative;
+}
+.lazy-load-image-background{
+    width: 100%;
+    height: 100%;
+}
+.lazy-load-image-background > img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.backdrop{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.4;
+}
+.opacity__layer{
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(180deg, rgb(4, 21, 45, 0) 0%,
+    #04152d 79.17%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.heroBanner__content{
+    /* opacity: 7; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+  
+}
+.title{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.subtitle{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.search__input{
+    display: flex;
+    align-items: center;
+}
+.search__input>input{
+    width: 400px;
+    height: 40px;
+    border: none;
+    padding: 8px;
+    font-size: 20px;
+    -webkit-border-top-left-radius: 30px;
+-webkit-border-bottom-left-radius: 30px;
+-moz-border-radius-topleft: 30px;
+-moz-border-radius-bottomleft: 30px;
+border-top-left-radius: 30px;
+border-bottom-left-radius: 30px;
+}
+
+

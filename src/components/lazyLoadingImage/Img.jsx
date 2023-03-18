@@ -9,6 +9,7 @@ const Img = ({src, className}) => {
     alt=""
     effect="blur"
     src={src}
+    
     />
   )
 }

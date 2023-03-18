@@ -26,6 +26,7 @@ function App() {
 
   useEffect(() => {
     fetchApiConfig();
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
 
