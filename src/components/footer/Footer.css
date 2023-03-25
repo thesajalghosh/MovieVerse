@@ -1,0 +1,37 @@
+.footer__menuItems{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  
+    justify-content: center;
+}
+.footer__menuItem{
+    margin: 9px;
+    padding: 0 13px;
+    cursor: pointer;
+    color: aliceblue;
+}
+.footer__menuItem:hover{
+    color: orange;
+}
+.infoText{
+    margin: 3px;
+    padding: 10px;
+    color: azure;
+}
+.socialIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4px;
+    
+}
+.icon{
+    margin: 4px;
+    padding: 0 15px;
+    color: azure;
+    cursor: pointer;
+}
+.icon:hover{
+    color: orange;
+}
