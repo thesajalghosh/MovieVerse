@@ -1,0 +1,12 @@
+.carouselSection{
+    position: relative;
+    margin-bottom: 70px;
+}
+.carouselTitle{
+    display: flex;
+    justify-content: space-between;
+}
+.tranding__title{
+    color: white;
+    font-size: 25px;
+}
