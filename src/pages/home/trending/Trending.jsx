@@ -11,6 +11,7 @@ const Trending = () => {
   const [endpoint, setEndPoint] = useState("day");
 
   const {data, loading} = useFetch(`/trending/all/${endpoint}`)
+  console.log(data)
 
     const onTabChange = (tab) =>{
         setEndPoint(tab === "Day" ? "day" : "week");
