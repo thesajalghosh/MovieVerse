@@ -10,8 +10,8 @@ import logo from "../../assets/movie-logo.png"
 
 const Header = () => {
 
-  const [show, setShow] = useState("top");
-  const [lastScrollY, setLastScrollY] = useState(0);
+  // const [show, setShow] = useState("top");
+  // const [lastScrollY, setLastScrollY] = useState(0);
   const [mobileMenu, setMobileMenu] = useState(false);
   const [query, setquery] = useState("");
   const [showSearch, setShowSearch] = useState(false);
@@ -53,6 +53,11 @@ const Header = () => {
     }
 
   }
+
+  console.log(mobileMenu)
+  console.log(openMobileMenu)
+  console.log(SlMenu)
+ 
 
 
   return (

@@ -12,7 +12,7 @@ import CircleRating from '../circleRating/CircleRating';
 import "./Carousel.css";
 
 
-const Carousel = ({data, loading}) => {
+const Carousel = ({data, loading, endpoint}) => {
   const CarouselContainer = useRef();
 
   const {url} = useSelector((state) => state.home);
@@ -20,7 +20,13 @@ const Carousel = ({data, loading}) => {
 
   const navigation = (dir) =>{
 
+    const container = CarouselContainer.current
+      const scrollAmount = dir === "left" ? container.scrollLeft - (container.offsetWidth + 30) : container.scrollLeft + (container.offsetWidth + 30)
 
+      container.scrollTo({
+        left:scrollAmount,
+        behavior: "smooth"
+      })
   }
 
   console.log(data)
@@ -49,11 +55,11 @@ const Carousel = ({data, loading}) => {
             onClick={() => navigation("right")}
         />
         {!loading ? (
-          <div className="carouselItems">
+          <div className="carouselItems" ref={CarouselContainer}>
             {data?.map((item) =>{
               const posterUrl = item.poster_path ? url.poster + item.poster_path : PosterFallback
                return (
-                <div key={item.id} className='carouselItem'>
+                <div key={item.id} className='carouselItem' onClick={()=>navigate(`/${item.media_type || endpoint}/${item.id}`)}>
                   <div className='posterBlock'>
                     <Img src={posterUrl}/>
                     <div className='rating__div'>
