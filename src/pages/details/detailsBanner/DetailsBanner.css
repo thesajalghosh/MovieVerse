@@ -1,0 +1,134 @@
+.detailsBanner{
+    margin-bottom: 90px;
+    padding-top: 20px;
+
+    width: 80%;
+    display: flex;
+    justify-content: center;
+   
+    color: white;
+}
+
+/* .backdrop-img {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+     top: 0;
+    left: 0;
+    opacity: 0.3;
+    overflow: hidden;
+} */
+.detailsBanner__posterImg > img {
+    height: 600px;
+    width: 400px;
+    border-radius: 12px;
+}
+.detailsBanner__content{
+    display: flex;
+    /* align-items: center;  */
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+    margin: auto;
+}
+
+
+.detailBanner__title{
+    font-size: 35px;
+    margin-top: 3px;
+    margin-bottom: 8px;
+    padding: 6px;
+}
+.detailBanner__subtitle{
+    color: rgb(114, 112, 108);
+    font-size: 20px;
+    padding: 6px;
+    margin-bottom: 12px;
+}
+.detailsBanner__row{
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+   width: 100%;
+   margin-bottom: 15px;
+   gap: 50px;
+}
+.row__circularRating{
+    width: 70px;
+}
+.playbtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+
+}
+.playbtn > svg {
+    width: 70px;
+}
+.text {
+    font-size: 20px;
+    transition: all 0.7s ease-in-out;
+}
+.triangle {
+    stroke-dasharray: 240;
+    stroke-dashoffset: 480;
+    stroke: white;
+    transform: translateY(0);
+    transition: all 0.7s ease-in-out;
+}
+.circle {
+    stroke: white;
+    stroke-dasharray: 650;
+    stroke-dashoffset: 1300;
+    transition: all 0.5s ease-in-out;
+}
+
+.playbtn:hover .text{
+    color: var(--pink);
+}
+.playbtn:hover .triangle{
+    stroke-dashoffset: 0;
+    opacity: 1;
+    stroke: var(--pink);
+    animation: trailorPlay 0.7s ease-in-out;
+}
+.playbtn:hover .circle{
+    stroke-dashoffset: 0;
+    stroke: var(--pink);
+}
+.overview{
+    padding: 5px;
+    margin-bottom: 15px;
+}
+.overview__heading{
+    font-size: 22px;
+    margin-bottom: 9px;
+}
+.description{
+    color: rgb(168, 166, 166);
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+.infoText{
+    color: rgb(146, 145, 145);
+    font-size: 15px;
+    margin-bottom: 5px;
+    padding: 0;
+}
+.bold{
+    color: white;
+    font-size: 20px;
+
+}
+.infoItem{
+    display: flex;
+    flex-direction: column;
+}

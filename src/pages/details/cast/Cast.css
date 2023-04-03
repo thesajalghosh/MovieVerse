@@ -1,0 +1,39 @@
+.castSection{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 80%;
+    /* background-color: yellow; */
+}
+.sectionHeading{
+    font-size: 24px;
+    color: white;
+    margin-bottom: 25px;
+}
+.listItems
+{
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow: auto;
+    gap: 10px;
+}
+.listItem{
+    width: 100px;
+    height: 180px;
+    
+}
+.profileImg{
+    width: 100px;
+    height: 100px;
+    
+   
+}
+.profileImg > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    border-radius: 50%;
+}

@@ -1,6 +1,3 @@
-.logo{
-    background-color: transparent;
-}
 
 
 
@@ -13,10 +10,11 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-between;
-    /* opacity: 0.4; */
+    justify-content: space-around;
+    
     background: rgba(0, 0, 0, 0.25);
-    position: relative;
+   
+  
     
 }
 .menuItems{
