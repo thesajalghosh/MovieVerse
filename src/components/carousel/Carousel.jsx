@@ -12,7 +12,7 @@ import CircleRating from '../circleRating/CircleRating';
 import "./Carousel.css";
 
 
-const Carousel = ({data, loading, endpoint}) => {
+const Carousel = ({data, loading, endpoint, title}) => {
   const CarouselContainer = useRef();
 
   const {url} = useSelector((state) => state.home);
@@ -46,6 +46,7 @@ const Carousel = ({data, loading, endpoint}) => {
   return (
     <div className="carousel">
     <ContentWrapper>
+    {title && <div className="carouselTitle">{title}</div>}
         <BsFillArrowDownLeftCircleFill 
             className="carouselLeftNav arrow"
             onClick={() => navigation("left")}

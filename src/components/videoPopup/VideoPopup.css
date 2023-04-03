@@ -4,13 +4,13 @@
     align-items: center;
     width: 30%;
     height: 30%;
-    position: fixed;
+    position: absolute;
     opacity: 0;
     visibility: hidden;
     z-index: 90000000;
 
 }
-.videoPlayer {
+.videoPlayer  {
     position: relative;
     width: 800px;
     aspect-ratio: 16 / 9;
@@ -18,20 +18,20 @@
     transform: scale(0.2);
     transition: transform 250ms;
 }
-.closeBtn {
+.closeBtn  {
     position: absolute;
     top: -20px;
     right: 0;
     color: white;
     cursor: pointer;
 }
-.visible {
+.visible  {
     opacity: 1;
     visibility: visible;
 }
-.opacityLayer {
+.opacityLayer  {
     opacity: 1;
 }
-.videoPlayer {
+.videoPlayer  {
     transform: scale(1);
 }

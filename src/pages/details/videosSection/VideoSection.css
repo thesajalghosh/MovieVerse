@@ -1,0 +1,66 @@
+.videoSection{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 80%;
+    position: relative;
+    margin-bottom: 40px;
+    
+}
+
+.videos{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+.videoItem{
+    width: 23%;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.videoThumbnail{
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.videoThumbnail > img{
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    transition: all 0.7s ease-in-out;
+}
+.videoThumbnail >  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+.videoThumbnail >  .triangle {
+    stroke-dasharray: 240;
+    stroke-dashoffset: 480;
+    stroke: white;
+    transform: translateY(0);
+    transition: all 0.7s ease-in-out;
+}
+.videoThumbnail > .circle {
+    stroke: white;
+    stroke-dasharray: 650;
+    stroke-dashoffset: 1300;
+    transition: all 0.5s ease-in-out;
+}
+
+.videoThumbnail:hover .triangle {
+    stroke-dashoffset: 0;
+    opacity: 1;
+    stroke: var(--pink);
+    animation: trailorPlay 0.7s ease-in-out;
+}
+.videoThumbnail:hover .circle {
+    stroke-dashoffset: 0;
+    stroke: var(--pink);
+}
+.videoTitle{
+    font-size: 12px;
+}
