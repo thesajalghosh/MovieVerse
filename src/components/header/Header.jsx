@@ -60,32 +60,34 @@ const Header = () => {
 
 
   return (
-    <header className='header'>
-      {/* <ContentWrapper> */}
-        <div className='Header__container'>
-          <div className='logo'>
-            <img src={logo} alt='logo' />
-          </div>
+    <header className={`header ${mobileMenu ? "mobileView" : ""}`}>
+
+      <div className='Header__container'>
+        <div className='logo'>
+          <img src={logo} alt='logo' onClick={() => {
+            navigate("/")
+          }} />
+        </div>
 
 
-          <div className='menuItems'>
-            <div className='menuItem'><HiOutlineSearch onClick={openSearch} /></div>
-            <div className='menuItem' onClick={() => { navigateHandlar("movie") }}>Movies</div>
-            <div className='menuItem' onClick={() => { navigateHandlar("tv") }}>TV Shows</div>
+        <div className='menuItems'>
+          <div className='menuItem'><HiOutlineSearch onClick={openSearch} /></div>
+          <div className='menuItem' onClick={() => { navigateHandlar("movie") }}>Movies</div>
+          <div className='menuItem' onClick={() => { navigateHandlar("tv") }}>TV Shows</div>
 
-
-          </div>
 
         </div>
-        {/* <div className='mobileMenuItems'>
-        <HiOutlineSearch/>
-        {mobileMenu ? (<VscChromeClose onClick={() =>{
+
+      
+      <div className='mobileMenuItems'>
+        <HiOutlineSearch onClick={openSearch} />
+        {mobileMenu ? (<VscChromeClose onClick={() => {
           setMobileMenu(false)
-        }}/>) : ( <SlMenu onClick={openMobileMenu}/>)}
-       
-        
-        </div> */}
-      {/* </ContentWrapper> */}
+        }} />) : (<SlMenu onClick={openMobileMenu} />)}
+
+
+      </div>
+</div>
       {showSearch && <div className='header__searchBar'>
         <ContentWrapper>
           <div className='header__search__input'>

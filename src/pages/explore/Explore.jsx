@@ -3,7 +3,7 @@ import './Explore.css'
 const Explore = () => {
   return (
     <div>
-      
+      explore
     </div>
   )
 }
