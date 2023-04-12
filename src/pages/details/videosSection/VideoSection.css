@@ -64,3 +64,13 @@
 .videoTitle{
     font-size: 12px;
 }
+
+@media (max-width:980px)  {
+    .videoSection{
+        width: 100%;
+    }
+    .videoItem{
+        width: 28%;
+    }
+
+}

@@ -1,8 +1,12 @@
+.footer{
+    background-color: rgb(41, 41, 78);
+    padding-top: 10px;
+}
+
 .footer__menuItems{
     display: flex;
     flex-direction: row;
     list-style: none;
-  
     justify-content: center;
 }
 .footer__menuItem{
@@ -31,7 +35,19 @@
     padding: 0 15px;
     color: azure;
     cursor: pointer;
+    margin-bottom: 40px;
 }
 .icon:hover{
     color: orange;
+}
+
+@media (max-width:980px)  {
+
+.footer__menuItem{
+    padding: 0 2px;
+}
+.socialIcons{
+    margin-top: 15px;
+    justify-content: space-around;
+}
 }

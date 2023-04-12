@@ -7,3 +7,10 @@
     margin: auto;
     color: white;
 }
+@media (max-width:980px)  {
+
+.details{
+    width: 99%;
+}
+
+}

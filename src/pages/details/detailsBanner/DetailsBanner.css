@@ -137,3 +137,15 @@
     display: flex;
     flex-direction: column;
 }
+
+@media (max-width:980px)  {
+    .detailsBanner__content{
+        flex-direction: column;
+    }
+    .detailsBanner__posterImg>img{
+        width: 360px;
+    }
+
+
+
+}

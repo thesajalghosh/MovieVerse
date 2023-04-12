@@ -22,7 +22,7 @@ const Trending = () => {
     <div className="carouselSection">
     <ContentWrapper>
         <span className="carouselTitle">
-           <div className='tranding__title'> Tranding </div>
+           <div className='tranding__title'> Trending </div>
         
         <SwitchTabs data={["Day", "week"]} onTabChange={onTabChange}/>
         </span>

@@ -104,3 +104,31 @@ margin-left: 0px;
     margin-bottom: 8px;
    
 }
+.carouselTitle{
+    font-size: 30px;
+    margin-bottom: 19px;
+}
+@media (max-width:980px)  {
+        .carouselTitle{
+            font-size: 30px;
+            margin-bottom: 19px;
+        }
+        .arrow{
+            display: none;
+        }
+        .posterBlock{
+            width: 120px;
+            height: 180px;
+        }
+        .carouselItems{
+            gap: 50px;
+            overflow: auto;
+        }
+        .carousel{
+            width: 100%;
+            width: 100%;
+        }
+        
+
+
+}
