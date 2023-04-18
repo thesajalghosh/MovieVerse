@@ -123,6 +123,7 @@ margin-left: 0px;
         .carouselItems{
             gap: 50px;
             overflow: auto;
+            margin-left: 1px;
         }
         .carousel{
             width: 100%;
