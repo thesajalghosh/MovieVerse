@@ -6,7 +6,7 @@ import './SearchResult.css'
 
 import { fetchDataFromApi } from '../../Utils/api';
 import ContentWrapper from '../../components/contentWrapper/ContentWrapper';
-import noResults from "../../assets/no-results.png"
+// import noResults from "../../assets/no-results.png"
 import Spinner from '../../components/spinner/Spinner';
 import MovieCard from '../../components/movieCard/MovieCard';
 
@@ -27,22 +27,23 @@ const fetchInitialData = () =>{
     })
 }
 
-const fetchNextPageData = () =>{
-  fetchDataFromApi(`/search/multi?query=${query}&page=${pageNum}`).then((res) =>{
-    if(data.results){
-      setData({
-        ...data, results: [...data?.results, ...res.results]
-      })
-    } else {
-      setData(res)
-    }
-    setPageNum((prev) => prev + 1)
-  })
+// const fetchNextPageData = () =>{
+//   fetchDataFromApi(`/search/multi?query=${query}&page=${pageNum}`).then((res) =>{
+//     if(data.results){
+//       setData({
+//         ...data, results: [...data?.results, ...res.results]
+//       })
+//     } else {
+//       setData(res)
+//     }
+//     setPageNum((prev) => prev + 1)
+//   })
 
-}
+// }
 
 useEffect(() =>{
     fetchInitialData();
+       // eslint-disable-next-line react-hooks/exhaustive-deps
 }, [])
 
 console.log(loading)
@@ -61,8 +62,8 @@ console.log(loading)
               </div>
               <InfiniteScroll>
                 {data.results.map((item, index) =>{
-                  if(item?.media_type ==="person") return;
-                  return (
+                  if(item?.media_type ==="person") return null;
+                 else  return (
                     <MovieCard key={index} data={item}/>
                   )
                 })}
